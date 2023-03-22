@@ -1,0 +1,176 @@
+
+
+q22222
+
+import 'package:flutter/material.dart';
+import 'dart:io';
+
+void main() {
+  print("Enter a number");
+  int number = stdin.readByteSync();
+  if(number%2==0)
+    {
+      print("it is an even number");
+    }
+  else
+    {
+      print("it is an odd number");
+
+    }
+}
+
+  q33333333333
+void main() {
+  var a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+  for(int i=0;i<a.length;i++)
+  {
+    if(a[i]<5)
+    {
+      print(a[i]);
+    }
+  }
+  
+}
+
+
+q44444444444
+
+void main() {
+  int n=26
+  for(int i=1;i<=n;i++)
+  {
+    if(n%i==0)
+    {
+      print(i);
+    }
+  }
+  
+}
+
+
+void main() {
+  var a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+  var b= [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+  int s1= a.length;
+  int s2=b.length;
+  List <int> out=[] ;
+  for(int i=0;i<s1;i++)
+  {
+    for(int j=0;j<s2;j++)
+    {
+      if(a[i]==b[j])
+      {
+         for(int k=0; k<=out.length;k++)
+          {
+              if(a[i]!=out[k])
+              {
+                out.add(a[i]);
+              }
+                
+          }
+       }   
+     }  
+   }
+  for(int o=0; o<out.length;o++)
+  {
+    print(out[o]);
+  }
+    
+      
+ 
+}
+
+
+q55555555
+List<int> c = a.toSet().where((element) => b.toSet().contains(element)).toList();
+
+
+
+
+q666
+void main() {
+  
+ String a='rener';
+ var size= (a.length)/2.ceil();
+ var n= a.length; 
+  for(int i=0;i<size;i++)
+  {
+    if(a[i]!=a[n-i-1])
+      break;
+     
+  }
+    
+      
+ 
+}
+
+
+
+
+q7777777777
+void main() {
+  
+ var a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+ List <int> out=[];
+  for(int i=0;i<a.length;i++)
+  {
+    if(a[i]%2==0)
+      out.add(a[i]);
+  }
+  
+  for(int j=0;j<out.length;j++)
+  {
+    print(out[j]);
+  }
+    
+ 
+}
+ q10
+
+
+void main() {
+  
+  int n=23;
+  int flag=1;
+  for (var i = 2; i <= n / i; i++)
+  {
+    if (n % i == 0) 
+    {
+      flag=0;
+    } 
+     
+  }
+  if(flag==0)
+    print('not prime');
+  else
+    print(' prime');
+ 
+ 
+}
+
+
+
+
+q11
+
+List <int>  funct(List <int> b)
+{
+  List <int> c=[];
+  c.add(b[0]);
+  var n=b.length;
+  c.add(b[n-1]);
+  return c;
+}
+
+
+void main() {
+  
+List <int> a = [5, 10, 15, 20, 25];
+List <int> result=funct(a);
+for(int i=0;i<result.length;i++)
+{
+  print(result[i]);
+}
+  
+ 
+}
